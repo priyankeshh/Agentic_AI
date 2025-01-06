@@ -76,6 +76,7 @@ st.markdown("""
         border-radius: 15px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin-top: 2rem;
+        color: black;
     }
     </style>
 """, unsafe_allow_html=True)
