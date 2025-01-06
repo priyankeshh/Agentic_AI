@@ -59,6 +59,33 @@ To run the PDF Assistant, execute the following command in the `PDF Assistant` d
 python pdf_assistant.py
 ```
 
+### Video Summarizer
+
+The Video Summarizer project is a Streamlit application that allows users to upload a video file and ask questions about its content. It uses a Gemini model for analysis and DuckDuckGo for web research to provide comprehensive answers.
+
+#### Files
+
+-   `app.py`: The main script for the Video Summarizer. It includes functionalities for uploading video files, processing them, and generating summaries and insights based on user queries.
+
+#### Installation
+
+1. Ensure you have Python 3.8 or higher installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the `Video Summarizer` directory.
+4. Install the required dependencies using pip:
+
+    ```bash
+    pip install -r ../requirements.txt
+    ```
+
+#### Usage
+
+To run the Video Summarizer, execute the following command in the `Video Summarizer` directory:
+
+```bash
+streamlit run app.py
+```
+
 ## Dependencies
 
 Both projects share a common set of dependencies, which are listed in the `requirements.txt` file at the root of the repository. These dependencies can be installed using pip:
