@@ -85,7 +85,7 @@ st.markdown("""
         color: black;
     }
     </style>
-""",hide_github_icon, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # Title section with gradient background
 st.markdown("""
@@ -94,6 +94,8 @@ st.markdown("""
         <p style="font-size: 1.2rem; opacity: 0.9;">Upload your video and get AI-powered insights instantly</p>
     </div>
 """, unsafe_allow_html=True)
+
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 # Initialize AI agent
 @st.cache_resource
