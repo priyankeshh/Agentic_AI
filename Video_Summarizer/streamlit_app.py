@@ -28,12 +28,6 @@ API_KEY = os.getenv("GOOGLE_API_KEY")
 if API_KEY:
     genai.configure(api_key=API_KEY)
 
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-
 # Custom CSS
 st.markdown("""
     <style>
@@ -94,8 +88,6 @@ st.markdown("""
         <p style="font-size: 1.2rem; opacity: 0.9;">Upload your video and get AI-powered insights instantly</p>
     </div>
 """, unsafe_allow_html=True)
-
-st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 st.markdown(
     """
