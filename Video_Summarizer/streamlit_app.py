@@ -28,6 +28,12 @@ API_KEY = os.getenv("GOOGLE_API_KEY")
 if API_KEY:
     genai.configure(api_key=API_KEY)
 
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+
 # Custom CSS
 st.markdown("""
     <style>
@@ -79,7 +85,7 @@ st.markdown("""
         color: black;
     }
     </style>
-""", unsafe_allow_html=True)
+""",hide_github_icon, unsafe_allow_html=True)
 
 # Title section with gradient background
 st.markdown("""
